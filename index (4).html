@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova de Conhecimentos Gerais</title>
+    <style>
+        /* ====================== CSS ====================== */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            animation: fadeIn 1s ease;
+        }
+        h1, h2, h3 {
+            text-align: center;
+        }
+        h1 { font-size: 2em; margin-bottom: 10px; }
+        h2 { font-size: 1.5em; margin-top: 30px; }
+        h3 { font-size: 1.2em; margin-top: 20px; }
+        .question {
+            margin-bottom: 20px;
+        }
+        .alternatives label {
+            display: block;
+            margin: 5px 0;
+            cursor: pointer;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .alternatives input[type="radio"] {
+            margin-right: 10px;
+        }
+        .alternatives label:hover {
+            background-color: #e0f7fa;
+        }
+        button {
+            background-color: #00796b;
+            color: #fff;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #004d40;
+        }
+        #enviado {
+            display: none;
+            text-align: center;
+            font-size: 1.5em;
+            color: #4caf50;
+            margin-top: 20px;
+            animation: pulse 1s infinite;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧠 Prova de Conhecimentos Gerais</h1>
+        <p><strong>Nível:</strong> Médio / Concursos Públicos</p>
+        <p><strong>Tempo sugerido:</strong> 1h30</p>
+        <p>Leia atentamente cada questão e marque apenas uma alternativa correta.</p>
+
+        <!-- ====================== QUESTÕES ====================== -->
+
+        <!-- HISTÓRIA -->
+        <h2>🏛 História</h2>
+        <div class="question">
+            <h3>1. Durante o período da Ditadura Militar no Brasil (1964–1985), uma das principais formas de censura era o controle de informações na imprensa. Esse tipo de medida tinha como objetivo:</h3>
+            <div class="alternatives">
+                <label><input type="radio" name="h1" value="a">a) Garantir a livre expressão das ideias políticas.</label>
+                <label><input type="radio" name="h1" value="b">b) Impedir a divulgação de críticas ao governo.</label>
+                <label><input type="radio" name="h1" value="c">c) Estimular a participação popular nas decisões políticas.</label>
+            </div>
+        </div>
+        <div class="question">
+            <h3>2. A Revolução Industrial modificou profundamente o modo de produção mundial. Uma das consequências sociais desse processo foi:</h3>
+            <div class="alternatives">
+                <label><input type="radio" name="h2" value="a">a) A diminuição do número de trabalhadores nas cidades.</label>
+                <label><input type="radio" name="h2" value="b">b) O surgimento do proletariado urbano.</label>
+                <label><input type="radio" name="h2" value="c">c) A extinção do comércio internacional.</label>
+            </div>
+        </div>
+        <div class="question">
+            <h3>3. A escravidão no Brasil foi oficialmente abolida em 1888. O documento que marcou esse fato histórico foi:</h3>
+            <div class="alternatives">
+                <label><input type="radio" name="h3" value="a">a) Constituição de 1824</label>
+                <label><input type="radio" name="h3" value="b">b) Carta Magna Imperial</label>
+                <label><input type="radio" name="h3" value="c">c) Lei Áurea</label>
+            </div>
+        </div>
+        <div class="question">
+            <h3>4. O movimento conhecido como “Diretas Já”, ocorrido em 1984, reivindicava:</h3>
+            <div class="alternatives">
+                <label><input type="radio" name="h4" value="a">a) A volta da monarquia ao Brasil.</label>
+                <label><input type="radio" name="h4" value="b">b) Eleições diretas para presidente.</label>
+                <label><input type="radio" name="h4" value="c">c) A criação de novos partidos comunistas.</label>
+            </div>
+        </div>
+        <div class="question">
+            <h3>5. Sobre a Segunda Guerra Mundial, é correto afirmar que:</h3>
+            <div class="alternatives">
+                <label><input type="radio" name="h5" value="a">a) O conflito foi iniciado após o ataque alemão à Polônia em 1939.</label>
+                <label><input type="radio" name="h5" value="b">b) O Brasil permaneceu neutro durante toda a guerra.</label>
+                <label><input type="radio" name="h5" value="c">c) Os Aliados eram compostos apenas por países europeus.</label>
+            </div>
+        </div>
+
+        <!-- GEOGRAFIA -->
+        <h2>🌎 Geografia</h2>
+        <div class="question">
+            <h3>1. O fenômeno conhecido como “Aquecimento Global” é causado principalmente por:</h3>
+            <div class="alternatives">
+                <label><input type="radio" name="g1" value="a">a) Redução da camada de ozônio natural.</label>
+                <label><input type="radio" name="g1" value="b">b) Emissão excessiva de gases de efeito estufa.</label>
+                <label><input type="radio" name="g1" value="c">c) Aumento da rotação terrestre.</label>
+            </div>
+        </div>
+        <div class="question">
+            <h3>2. O Brasil está localizado majoritariamente:</h3>
+            <div class="alternatives">
+                <label><input type="radio" name="g2" value="a">a) No Hemisfério Norte e Oriental.</label>
+                <label><input type="radio" name="g2" value="b">b) No Hemisfério Sul e Ocidental.</label>
+                <label><input type="radio" name="g2" value="c">c) No Hemisfério Norte e Ocidental.</label>
+            </div>
+        </div>
+        <div class="question">
+            <h3>3. As atividades do agronegócio no Centro-Oeste brasileiro estão ligadas principalmente à produção de:</h3>
+            <div class="alternatives">
+                <label><input type="radio" name="g3" value="a">a) Cana-de-açúcar e café.</label>
+                <label><input type="radio" name="g3" value="b">b) Soja e milho.</label>
+                <label><input type="radio" name="g3" value="c">c) Cacau e algodão.</label>
+            </div>
+        </div>
+        <div class="question">
+            <h3>4. A urbanização desordenada causa problemas como:</h3>
+            <div class="alternatives">
+                <label><input type="radio" name="g4" value="a">a) Expansão equilibrada das cidades.</label>
+                <label><input type="radio" name="g4" value="b">b) Aumento das áreas verdes urbanas.</label>
+                <label><input type="radio" name="g4" value="c">c) Crescimento de favelas e falta de saneamento.</label>
+            </div>
+        </div>
+        <div class="question">
+            <h3>5. A Floresta Amazônica é importante para o equilíbrio ambiental global porque:</h3>
+            <div class="alternatives">
+                <label><input type="radio" name="g5" value="a">a) Absorve grande quantidade de dióxido de carbono.</label>
+                <label><input type="radio" name="g5" value="b">b) Aumenta a temperatura do planeta.</label>
+                <label><input type="radio" name="g5" value="c">c) Reduz a biodiversidade local.</label>
+            </div>
+        </div>
+
+        <!-- PORTUGUÊS -->
+        <h2>📚 Português</h2>
+        <div class="question">
+            <h3>1. Leia o trecho: “O homem é do tamanho do seu sonho.” — Fernando Pessoa. O termo destacado é um exemplo de:</h3>
+            <div class="alternatives">
+                <label><input type="radio" name="p1" value="a">a) Metáfora</label>
+                <label><input type="radio" name="p1" value="b">b) Hipérbole</label>
+                <label><input type="radio" name="p1" value="c">c) Comparação</label>
+            </div>
+        </div>
+        <div class="question">
+            <h3>2. Em “Nada será como antes”, a palavra “nada” exerce função de:</h3>
+            <div class="alternatives">
+                <label><input type="radio" name="p2" value="a">a) Verbo</label>
+                <label><input type="radio" name="p2" value="b">b) Substantivo</label>
+                <label><input type="radio" name="p2" value="c">c) Pronome indefinido</label>
+            </div>
+        </div>
+        <div class="question">
+            <h3>3. A concordância correta é:</h3>
+            <div class="alternatives">
+                <label><input type="radio" name="p3" value="a">a) Os aluno estudou bastante.</label>
+                <label><input type="radio" name="p3" value="b">b) Os alunos estudaram bastante.</label>
+                <label><input type="radio" name="p3" value="c">c) Os alunos estudou bastante.</label>
+            </div>
+        </div>
+        <div class="question">
+            <h3>4. O gênero textual “crônica” caracteriza-se por:</h3>
+            <div class="alternatives">
+                <label><input type="radio" name="p4" value="a">a) Narrar fatos cotidianos de forma reflexiva.</label>
+                <label><input type="radio" name="p4" value="b">b) Explicar conceitos científicos detalhados.</label>
+                <label><input type="radio" name="p4" value="c">c) Apresentar dados técnicos e estatísticos.</label>
+            </div>
+        </div>
+        <div class="question">
+            <h3>5. O uso de vírgula para isolar o vocativo está correto em:</h3>
+            <div class="alternatives">
+                <label><input type="radio" name="p5" value="a">a) Maria vamos sair.</label>
+                <label><input type="radio" name="p5" value="b">b) Maria, vamos sair.</label>
+                <label><input type="radio" name="p5" value="c">c) Vamos sair Maria.</label>
+            </div>
+        </div>
+
+        <!-- MATEMÁTICA -->
+        <h2>🔢 Matemática</h2>
+        <div class="question">
+            <h3>1. A soma dos ângulos internos de um triângulo é:</h3>
+            <div class="alternatives">
+                <label><input type="radio" name="m1" value="a">a) 90°</label>
+                <label><input type="radio" name="m1" value="b">b) 180°</label>
+                <label><input type="radio" name="m1" value="c">c) 360°</label>
+            </div>
+        </div>
+        <div class="question">
+            <h3>2. Se um produto custa R$ 200 e sofre um desconto de 25%, seu novo valor é:</h3>
+            <div class="alternatives">
+                <label><input type="radio" name="m2" value="a">a) R$ 150</label>
+                <label><input type="radio" name="m2" value="b">b) R$ 175</label>
+                <label><input type="radio" name="m2" value="c">c) R$ 180</label>
+            </div>
+        </div>
+        <div class="question">
+            <h3>3. A raiz quadrada de 49 é:</h3>
+            <div class="alternatives">
+                <label><input type="radio" name="m3" value="a">a) 6</label>
+                <label><input type="radio" name="m3" value="b">b) 7</label>
+                <label><input type="radio" name="m3" value="c">c) 8</label>
+            </div>
+        </div>
+        <div class="question">
+            <h3>4. Um trem percorre 300 km em 5 horas. Sua velocidade média é:</h3>
+            <div class="alternatives">
+                <label><input type="radio" name="m4" value="a">a) 50 km/h</label>
+                <label><input type="radio" name="m4" value="b">b) 60 km/h</label>
+                <label><input type="radio" name="m4" value="c">c) 75 km/h</label>
+            </div>
+        </div>
+        <div class="question">
+            <h3>5. Um número é divisível por 9 quando:</h3>
+            <div class="alternatives">
+                <label><input type="radio" name="m5" value="a">a) É par.</label>
+                <label><input type="radio" name="m5" value="b">b) A soma de seus algarismos é múltipla de 9.</label>
+                <label><input type="radio" name="m5" value="c">c) Termina em 9.</label>
+            </div>
+        </div>
+
+        <!-- ATUALIDADES / CULTURA GERAL -->
+        <h2>🌐 Atualidades / Cultura Geral</h2>
+        <div class="question">
+            <h3>1. Em 2024, a COP29 teve como foco principal:</h3>
+            <div class="alternatives">
+                <label><input type="radio" name="c1" value="a">a) Redução da dívida externa de países emergentes.</label>
+                <label><input type="radio" name="c1" value="b">b) Combate às mudanças climáticas e metas de carbono zero.</label>
+                <label><input type="radio" name="c1" value="c">c) Incentivo à exploração de combustíveis fósseis.</label>
+            </div>
+        </div>
+        <div class="question">
+            <h3>2. A inteligência artificial tem sido discutida mundialmente por seu impacto em:</h3>
+            <div class="alternatives">
+                <label><input type="radio" name="c2" value="a">a) Aumentar a informalidade no trabalho.</label>
+                <label><input type="radio" name="c2" value="b">b) Eliminar a necessidade de alfabetização.</label>
+                <label><input type="radio" name="c2" value="c">c) Reduzir a eficiência produtiva.</label>
+            </div>
+        </div>
+        <div class="question">
+            <h3>3. A pandemia de COVID-19 evidenciou a importância de:</h3>
+            <div class="alternatives">
+                <label><input type="radio" name="c3" value="a">a) Reduzir investimentos em ciência.</label>
+                <label><input type="radio" name="c3" value="b">b) Fortalecer sistemas públicos de saúde.</label>
+                <label><input type="radio" name="c3" value="c">c) Evitar campanhas de vacinação.</label>
+            </div>
+        </div>
+        <div class="question">
+            <h3>4. Um dos maiores desafios das cidades inteligentes é:</h3>
+            <div class="alternatives">
+                <label><input type="radio" name="c4" value="a">a) Implementar tecnologia sem sustentabilidade.</label>
+                <label><input type="radio" name="c4" value="b">b) Integrar inovação com inclusão social.</label>
+                <label><input type="radio" name="c4" value="c">c) Reduzir o acesso à internet.</label>
+            </div>
+        </div>
+        <div class="question">
+            <h3>5. No Brasil, o Censo 2022 apontou que a população ultrapassou:</h3>
+            <div class="alternatives">
+                <label><input type="radio" name="c5" value="a">a) 190 milhões</label>
+                <label><input type="radio" name="c5" value="b">b) 203 milhões</label>
+                <label><input type="radio" name="c5" value="c">c) 220 milhões</label>
+            </div>
+        </div>
+
+        <button id="submitBtn">Enviar</button>
+        <div id="enviado">Enviado! ✅</div>
+    </div>
+
+    <audio id="tadaSound" src="tada.mp3"></audio>
+
+    <script>
+        /* ====================== JS ====================== */
+
+        // Função para verificar se todas as questões foram respondidas
+        function checkAllAnswered() {
+            const totalQuestions = 25;
+            let answered = 0;
+            for (let i = 1; i <= 5; i++) {
+                ['h','g','p','m','c'].forEach(prefix => {
+                    const qName = prefix + i;
+                    if(document.querySelector('input[name="'+qName+'"]:checked')){
+                        answered++;
+                    }
+                });
+            }
+            return answered === totalQuestions;
+        }
+
+        // Salvar respostas no localStorage
+        function saveAnswers() {
+            const answers = {};
+            for (let i = 1; i <= 5; i++) {
+                ['h','g','p','m','c'].forEach(prefix => {
+                    const qName = prefix + i;
+                    const selected = document.querySelector('input[name="'+qName+'"]:checked');
+                    answers[qName] = selected ? selected.value : null;
+                });
+            }
+            localStorage.setItem('provaRespostas', JSON.stringify(answers));
+        }
+
+        // Evento do botão enviar
+        document.getElementById('submitBtn').addEventListener('click', () => {
+            if(!checkAllAnswered()){
+                alert("Por favor, responda todas as questões antes de enviar.");
+                return;
+            }
+            saveAnswers();
+            const enviado = document.getElementById('enviado');
+            enviado.style.display = 'block';
+            document.getElementById('tadaSound').play();
+        });
+
+        // Fullscreen obrigatório
+        function requestFullScreen() {
+            if(document.documentElement.requestFullscreen){
+                document.documentElement.requestFullscreen();
+            } else if(document.documentElement.webkitRequestFullscreen){
+                document.documentElement.webkitRequestFullscreen();
+            } else if(document.documentElement.msRequestFullscreen){
+                document.documentElement.msRequestFullscreen();
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            requestFullScreen();
+        });
+
+        // Reinicia a prova se sair do fullscreen
+        document.addEventListener('fullscreenchange', () => {
+            if(!document.fullscreenElement){
+                alert("Você saiu do modo tela cheia. A prova será reiniciada!");
+                location.reload();
+            }
+        });
+
+        // Evita troca de aba (visibilidade)
+        document.addEventListener('visibilitychange', () => {
+            if(document.hidden){
+                alert("Você mudou de aba. A prova será reiniciada!");
+                location.reload();
+            }
+        });
+    </script>
+</body>
+</html>
